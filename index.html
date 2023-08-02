@@ -8,8 +8,347 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/index.css">
+    <!-- <link rel="stylesheet" href="styles/index.css"> -->
     <title>Resume</title>
+    <style>body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #F5F7FA;
+    }
+    
+    
+    
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    ul {
+       
+        padding: 0;
+        margin: 0;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    
+    .main-container {
+        background-color: #FFF;
+        padding: 0;
+        box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .section {
+        padding: 0 50px;
+        margin-bottom: 30px;
+    }
+    
+    .lang {
+        text-align: right;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    
+    .lang-link {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .lang-link:hover,
+    .lang-link:focus {
+        font-weight: 700;}
+        
+    
+    
+    .about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+        background:  rgb(48 88 131) 100%;
+    }
+    
+    .about-position {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 17px;
+        letter-spacing: 0.1em;
+        color: #fff;
+        margin-bottom: 20px;
+        margin-top: 0;
+       
+    }
+    
+    .about-name {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 55px;
+        color: #fff;
+        margin-bottom: 25px;
+      
+    }
+    
+    .about-description {
+        font-size: 17px;
+        line-height: 24px;
+        color: #fff;
+    
+    }
+    
+    
+    .title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 27px;
+        color: #000000;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    
+    
+    .projects-list {
+        padding: 0;
+        margin-left: 20px;
+        list-style: none;
+        position: relative;
+    
+    }
+    
+    
+    
+    .project-item {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #000000;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    
+    
+    .project {
+        font-weight: 700;
+        color: #595959;
+    }
+    
+    .project-link {
+        font-size: 19px;
+        color: inherit;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .project-link:hover {
+        color: rgb(48 88 131);
+        
+        text-decoration: none;
+    }
+    
+    .project-bracket {
+        font-size: 19px;
+        line-height: 24px;
+    }
+    
+    
+    .company-list {
+        list-style: none;
+        position: relative;
+        margin-left: 20px;
+    }
+    
+    
+    
+    .company-item {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .company-item:last-child {
+        margin-bottom: 0;
+    }
+    
+    
+    
+    .work-position {
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 20px;
+        color: #737373;
+        margin-bottom: 10px;
+    }
+    
+    .company {
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .period {
+        font-size: 17px;
+        line-height: 15px;
+        color: #737373;
+        margin-bottom: 10px;
+    }
+    
+    .line {
+        font-size: 15px;
+        line-height: 15px;
+        color: #000000;
+    }
+    
+    .work-list {
+        padding: 0;
+        margin-left: 15px;
+        list-style:circle;
+    }
+    
+    .work-list-item {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        color: #595959;
+        
+    }
+    
+    
+    .education {
+        margin: auto;
+    }
+    
+    .education-list {
+        list-style: none;
+        position: relative;
+        margin-left: 20px;
+    }
+    
+    
+    
+    .education-item {
+        margin-bottom: 20px;
+        position: relative;
+    
+    }
+    
+    
+    
+    .education-uni {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 20px;
+        color: #737373;
+        margin: 0 0 10px 0;
+    }
+    
+    .education-spec {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 17px;
+        color: #737373;
+        margin: 0 0 10px 0;
+    }
+    
+    
+    .sidebar {
+        background-color: #595c61;
+        color: white;
+        padding: 40px;
+        padding-right: 0;
+        margin-left: 0;
+        width: 400px;
+    }
+    
+    .photo {
+        width: 270px;
+        height: 250px;
+        border-radius: 30%;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    
+    .sidebar-title {
+        color: #FFF;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 27px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    /* .sidebar-title::before {
+        content: '';
+        position: absolute;
+        top: 35px;
+        width: 100%;
+        height: 1px;
+        background: white;
+    } */
+    
+    .contacts,
+    .tech-skills,
+    .soft-skills,
+    .languages {
+        padding-left: 10px;
+    }
+    
+    .contacts,
+    .tech-skills,
+    .soft-skills {
+        margin-bottom: 40px;
+    }
+    
+    .contact-type {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFF;
+        margin-right: 8px;
+    }
+    
+    .contact-link {
+        display: block;
+        font-size: 14px;
+        line-height: 24px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .contact-link:hover,
+    .contact-link:focus {
+        font-weight: 700;
+    }
+    
+    .tech-skills-list,
+    .soft-skills-list,
+    .languages-list {
+        color: #FFF;
+        padding: 0px;
+        margin-left: 18px;
+    }
+    
+    .tech-skills-text,
+    .soft-skills-text,
+    .languages-text {
+        font-size: 17px;
+        line-height: 24px;
+        color: #FFF;
+    }</style>
 
 </head>
 
